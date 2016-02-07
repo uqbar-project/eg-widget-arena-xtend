@@ -10,6 +10,8 @@ import org.uqbar.arena.windows.WindowOwner
 import org.uqbar.ejemplosWidgets.appModel.Provincia
 import org.uqbar.ejemplosWidgets.appModel.VerProvincias
 
+import static extension org.uqbar.arena.xtend.ArenaXtendExtensions.*
+
 class VerProvinciasWindow extends Window<VerProvincias> {
 
 	new(WindowOwner owner, VerProvincias model) {
@@ -21,13 +23,13 @@ class VerProvinciasWindow extends Window<VerProvincias> {
 		new ErrorsPanel(mainPanel, "Ingrese un valor\n")
 		
 		new TextBox(mainPanel) => [
-			bindValueToProperty("valorNuevo")
-			bindEnabledToProperty("valorEnabled")	
+			value <=> "valorNuevo"
+			enabled <=> "valorEnabled"	
 		]
 		
 		val table = new Table<Provincia>(mainPanel, typeof(Provincia)) => [
-			bindItemsToProperty("provincias")
-			bindValueToProperty("provinciaSeleccionada")
+			items <=> "provincias"
+			value <=> "provinciaSeleccionada"
 			numberVisibleRows = 10
 		]
 		
