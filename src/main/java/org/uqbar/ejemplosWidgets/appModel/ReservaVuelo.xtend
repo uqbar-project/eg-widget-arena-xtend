@@ -9,13 +9,16 @@ import org.uqbar.commons.utils.Observable
 class ReservaVuelo {
 
 	List<Asiento> asientos = newArrayList
+	Asiento asientoSeleccionado
+	
+	public static int MAX_ASIENTOS = 10
 
 	new() {
 		this.initAsientos()
 	}
 
 	def void initAsientos() {
-		(1..20).forEach [ i |
+		(1..MAX_ASIENTOS).forEach [ i |
 			asientos.add(new Asiento(i, "Pasillo"))
 			asientos.add(new Asiento(i, "Centro"))
 			asientos.add(new Asiento(i, "Ventanilla"))
@@ -25,5 +28,5 @@ class ReservaVuelo {
 	def asientosDeFila(int filaPedida) {
 		asientos.filter [ it.fila == filaPedida ]
 	}
-
+	
 }

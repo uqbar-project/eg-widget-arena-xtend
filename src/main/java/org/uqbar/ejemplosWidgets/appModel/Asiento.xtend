@@ -20,11 +20,11 @@ class Asiento {
 	}
 	
 	override toString() {
-		"" + fila + posicion.substring(0)
+		" " + fila + posicion.substring(0,1) + " "
 	}
 	
 	def getDisponible() {
-		fila < 10
+		fila < ReservaVuelo.MAX_ASIENTOS / 2
 	}
 	
 }
