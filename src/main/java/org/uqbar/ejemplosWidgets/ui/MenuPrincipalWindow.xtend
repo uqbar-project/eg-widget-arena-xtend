@@ -15,7 +15,7 @@ class MenuPrincipalWindow extends Window<MenuPrincipalModel> {
 		this.modelObject.opciones.forEach [ opcion |
 			new Button(mainPanel) => [ 
 				caption = opcion.descripcion
-				onClick = opcion.action
+				onClick(opcion.action)
 			]
 		]	
 	}
