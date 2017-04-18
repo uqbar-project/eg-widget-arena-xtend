@@ -7,6 +7,7 @@ import org.uqbar.arena.widgets.Panel
 import org.uqbar.arena.windows.Window
 import org.uqbar.arena.windows.WindowOwner
 import org.uqbar.ejemplosWidgets.appModel.EjemploImagen
+import static extension org.uqbar.arena.xtend.ArenaXtendExtensions.*
 
 class EjemploImagenWindow extends Window<EjemploImagen> {
 
@@ -21,7 +22,7 @@ class EjemploImagenWindow extends Window<EjemploImagen> {
 			])
 		]
 		new Label(mainPanel) => [
-			bindValueToProperty('title')
+			value <=> "title"
 			fontSize = 15
 			foreground = Color.WHITE
 			background = Color.DARK_GRAY
