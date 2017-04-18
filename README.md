@@ -2,6 +2,8 @@
 
 ![widget](https://cloud.githubusercontent.com/assets/4549002/17299089/33086456-57e3-11e6-9dfe-e9b75b5f3d77.png)
 
+[![Build Status](https://travis-ci.org/uqbar-project/eg-widget-arena-xtend.svg?branch=master)](https://travis-ci.org/uqbar-project/eg-widget-arena-xtend) 
+
 Una aplicación que muestra el uso de diferentes controles visuales o widgets:
 
 * tiene un menú principal armado dinámicamente con opciones
