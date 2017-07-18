@@ -17,7 +17,7 @@ class EventoWindow extends Window<Evento> {
 	}
 	
 	override createContents(Panel mainPanel) {
-		new ErrorsPanel(mainPanel, "ok", 100)
+		new ErrorsPanel(mainPanel, "ok", 3)
 		val columnas = new Panel(mainPanel)
 		columnas.layout = new ColumnLayout(2)
 		val columnaIzquierda = new Panel(columnas)

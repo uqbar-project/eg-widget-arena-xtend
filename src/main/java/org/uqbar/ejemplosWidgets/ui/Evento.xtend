@@ -3,7 +3,7 @@ package org.uqbar.ejemplosWidgets.ui
 import java.util.Calendar
 import java.util.Date
 import org.eclipse.xtend.lib.annotations.Accessors
-import org.uqbar.commons.utils.Observable
+import org.uqbar.commons.model.annotations.Observable
 
 @Accessors
 @Observable

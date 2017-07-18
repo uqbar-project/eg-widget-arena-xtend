@@ -2,12 +2,14 @@ package org.uqbar.ejemplosWidgets.ui
 
 import java.util.List
 import org.eclipse.xtend.lib.annotations.Accessors
+import org.uqbar.commons.model.annotations.Observable
 import org.uqbar.ejemplosWidgets.appModel.CalculadoraBigDecimal
 import org.uqbar.ejemplosWidgets.appModel.EjemploImagen
 import org.uqbar.ejemplosWidgets.appModel.ReservaVuelo
 import org.uqbar.ejemplosWidgets.appModel.VerProvincias
 import org.uqbar.ejemplosWidgets.runnable.WidgetApplication
 
+@Observable
 @Accessors
 class MenuPrincipalModel {
 

@@ -3,8 +3,8 @@ package org.uqbar.ejemplosWidgets.appModel
 import java.awt.Color
 import java.math.BigDecimal
 import org.eclipse.xtend.lib.annotations.Accessors
-import org.uqbar.commons.utils.Dependencies
-import org.uqbar.commons.utils.Observable
+import org.uqbar.commons.model.annotations.Dependencies
+import org.uqbar.commons.model.annotations.Observable
 
 /**
  * Application model para la vista de la calculadora	
