@@ -22,7 +22,9 @@ class EventoWindow extends Window<Evento> {
 		columnas.layout = new ColumnLayout(2)
 		val columnaIzquierda = new Panel(columnas)
 		new Label(columnaIzquierda).text = "Le pido que ingrese una fecha"
-		new TextBox(columnaIzquierda).value <=> "fecha"
+		new TextBox(columnaIzquierda) => [
+			(value <=> "fecha").transformer = new LocalDateTransformer 
+		]
 		val columnaDerecha = new Panel(columnas)
 		new Label(columnaDerecha).text = "Mañana será"
 		new Label(columnaDerecha).value <=> "maniana"
