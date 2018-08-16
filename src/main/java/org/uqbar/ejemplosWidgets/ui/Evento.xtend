@@ -14,7 +14,7 @@ class Evento {
 	
 	@Dependencies("fecha")
 	def String getManiana() {
-		fecha.plusDays(1).format(DateTimeFormatter.ofPattern("dd/MM/yyyy"))
+		fecha?.plusDays(1).format(DateTimeFormatter.ofPattern("dd/MM/yyyy"))
 	}
 	
 }
