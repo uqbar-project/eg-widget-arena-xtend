@@ -23,7 +23,7 @@ class VerProvincias {
 	
 	@Dependencies("provinciaSeleccionada")
 	def Boolean getValorEnabled() {
-		provinciaSeleccionada != null
+		provinciaSeleccionada !== null
 	}
 
 }
