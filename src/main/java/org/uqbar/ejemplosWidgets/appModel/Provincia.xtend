@@ -6,11 +6,9 @@ import org.uqbar.commons.model.annotations.Observable
 @Observable
 @Accessors
 class Provincia {
-	
 	String nombre
 	
 	new(String valor) {
 		this.nombre = valor
 	}
-	
 }

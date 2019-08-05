@@ -14,9 +14,9 @@ class CalculadoraBigDecimal {
 
 	BigDecimal valor = new BigDecimal(18000)
 
-	def void setValor(BigDecimal unValor) {
-		valor = unValor
-	}
+//	def void setValor(BigDecimal unValor) {
+//		valor = unValor
+//	}
 
 	@Dependencies("valor")
 	def getElDoble() {
