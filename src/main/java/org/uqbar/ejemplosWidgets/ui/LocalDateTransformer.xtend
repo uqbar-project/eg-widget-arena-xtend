@@ -20,13 +20,9 @@ class LocalDateTransformer implements ValueTransformer<LocalDate, String> {
 		}
 	}
 	
-	override getModelType() {
-		typeof(LocalDate)
-	}
+	override getModelType() { LocalDate }
 	
-	override getViewType() {
-		typeof(String)
-	}
+	override getViewType() { String	}
 	
 	override modelToView(LocalDate valueFromModel) {
 		if (valueFromModel === null) return null else valueFromModel.format(formatter)

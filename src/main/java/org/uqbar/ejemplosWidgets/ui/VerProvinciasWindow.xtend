@@ -27,7 +27,7 @@ class VerProvinciasWindow extends Window<VerProvincias> {
 			enabled <=> "valorEnabled"	
 		]
 		
-		val table = new Table<Provincia>(mainPanel, typeof(Provincia)) => [
+		val table = new Table<Provincia>(mainPanel, Provincia) => [
 			items <=> "provincias"
 			value <=> "provinciaSeleccionada"
 			numberVisibleRows = 10
